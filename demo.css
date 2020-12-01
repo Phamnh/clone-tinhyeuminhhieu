@@ -1,0 +1,94 @@
+
+* {
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("img/7800.jpg_wh860.jpg");
+    background-size: cover;
+}
+#parent-circle {
+      position: relative;
+      width: 40vw;
+      height: 40vw;
+      border: 0.4vw solid rgba(0, 0, 0, 0.4);
+      border-radius: 50%;
+      transform: rotate(0deg);
+      transition: transform 0.7s linear;
+      animation: rotate 7s infinite linear;
+      background-image: url("img/hieuyeuroi.jpg");
+      background-size: 100%;
+}
+.ra::after {
+    position: relative;
+      width: 40vw;
+      height: 40vw;
+      border: 0.4vw solid rgba(0, 0, 0, 0.4);
+      border-radius: 50%;
+      transform: rotate(0deg);
+      transition: transform 0.7s linear;
+      animation: rotate 7s infinite linear;
+      background-image: url("img/74611530_2571534943066924_7385675613887004672_o.jpg");
+      background-size: 100%;
+}
+    .circle {
+        display: block;
+        position: absolute;
+        width: 16%;
+        height: 16%;
+        margin: -8%;
+        border-radius: 50%;
+        top: 50%; 
+        left: 50%;
+    }
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+}
+.content {
+    overflow: hidden;
+    max-height: 0;
+}
+.batdau {
+    padding: 50px;
+}
+#nhatne {
+    width: 100%;
+    margin-top: 300px;
+    margin-left: -150px;
+    margin-right: 80px;
+}
+/* .a {
+    width: 100%;
+    display: flex;
+} */
+/* .nhatne {
+    margin-top: 600px;
+    margin-left: -500px;
+} */
+/* [class*=col-]{
+    float: left;
+    padding: 15px;
+    
+} */
+/* @media only screen and (min-width: 300px) and (max-width: 870px) {
+    #parent-circle {
+    margin-left: 150px;
+      width: 60vw;
+      height: 60vw;
+      border: 0.4vw solid rgba(0, 0, 0, 0.4);
+      border-radius: 50%;
+      transform: rotate(0deg);
+    }
+    #nhatne{
+        margin-top:40px;
+    }
+} */

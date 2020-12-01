@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiếu và tình yêu 2k6</title>
+    <link rel="stylesheet" href="demo.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="a">
+        <div id="parent-circle" >
+            <div class="circle blue">  
+            </div>
+            <div class="circle pink"></div>
+            <div class="circle lime"></div>
+            <div class="circle orange"></div>
+            <div class="circle teal"></div>
+          </div>
+    </div>
+        <audio id="nhatne" controls loop >
+            <source src="music/Làm Vợ Anh Nhé.mp3" type="audio/mpeg">
+        </audio>
+       
+    
+    <script>
+    document.getElementById("nhatne").play();
+        var state=true;
+       function hieuyeuem(){
+           var cc = document.getElementById("parent-circle");
+           var emnhu = "";
+            if(state){
+                 emnhu = "url('img/em.jpg')";
+                 state=false;
+            }else {
+                emnhu="url('img/hieuyeuroi.jpg')";
+                state=true;
+            }
+           cc.style.backgroundImage = emnhu;
+       }
+       setInterval(hieuyeuem, 3000);
+       $(document).ready(function(){ 
+        $("#nhatne").play();
+})
+    </script>
+</body>
+</html>
